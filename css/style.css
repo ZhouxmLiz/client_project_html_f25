@@ -39,9 +39,10 @@ a{
   color: black;
 }
 
-ul{
+body li{
   text-align:left;
   font-size: 3vw;
+  padding-top: 1.5vw;
 }
 
 
