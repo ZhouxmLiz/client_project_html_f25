@@ -80,7 +80,7 @@ nav a:focus{
 /* header */
 nav li{
   display:inline;
-  padding-left:3vw;
+  padding:2vw;
   font-size:3vw;
 }
 nav a{
@@ -109,6 +109,14 @@ nav a{
      max-height: 100%;
      grid-column: 2/-1;
 }
+.active{
+  border: 1vw solid #f2c200;
+  border-style: none none solid none;
+}
+.active a{
+  font-style: italic;
+}
+
 
 /* footer */
 footer{
