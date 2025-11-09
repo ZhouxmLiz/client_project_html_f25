@@ -34,6 +34,12 @@ p{
   line-height: 1;
   text-align:left;
 }
+figure{
+  font-size: 3vw;
+}
+li{
+  font-size: 3vw;
+}
 
 a{
   color: black;
@@ -149,16 +155,15 @@ footer p{
 }
 .container>:first-child p{
   padding: 0 5vw;
-  text-align: center;
 }
 .container>:first-child h2{
-  padding: 2vw 4vw;
+  padding: 2vw 2vw 0 2vw;
   text-align: center;
 }
 .container>:first-child img {
   width: 40%;
   height: auto;
-  padding: 3vw 1vw;
+  padding:1vw 1vw;
   border-radius: 5vw; 
 }
 
@@ -184,17 +189,84 @@ footer p{
 .container>:nth-child(2){
   grid-column: 1 / -1;
   grid-row: 2/3;
-  font-size: 3vw;
-  text-align:left;
+  text-align:center;
   padding: 3vw 10vw;
+}
+
+.container h2 {
+  margin-bottom: 0.5vw;
+}
+
+.container h3 {
+  margin-top: 1vw;
+}
+
+.container p {
+  margin-bottom: 1.5vw;
+  line-height: 1.5;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card, .sub-card{
+  display: block;
+  background-color: #f9fbfd;
+  border: 0.4vw solid #d9e4f5;
+  border-radius: 1vw;
+  padding: 1vw;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  box-shadow: 0 1vw 2vw rgba(0,0,0,0.05);
+}
+
+.card:hover, .sub-card:hover{
+  border-color: #003366;
+  box-shadow: 0 2vw 3vw rgba(0,0,0,0.1);
+  transform: translateY(-1vw);
+  background-color: #eef4fb;
+}
+
+.card h3, .sub-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.card p, .sub-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+.card-group {
+  background-color: #f1f5fa;
+  border-radius: 1vw;
+  padding: 1rem;
+  border: 0.4vw solid #cdd9eb;
+}
+
+.card-group h3 {
+  color: #002a5c;
+  margin-bottom: 0.6rem;
+}
+
+.sub-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 2vw));
+  gap: 0.75rem;
 }
 .container>:nth-child(3){
   grid-column: 1 / -1;
   grid-row: 3/4;
-  text-align:center;
+  text-align:left;
   padding: 3vw 10vw;
   background-color:#b8d1c9;
 }
+
 .container>:nth-child(3) img{
   width: 30%;
 }
@@ -203,8 +275,8 @@ footer p{
 }
 .container>:nth-child(3) ul{
   text-align:left;
-  font-size: 3vw;
 }
+.start_here a:hover,
 .start_here a:focus {
   border: none;
   outline: 0.5vw dashed #00274C;
@@ -229,7 +301,6 @@ footer p{
 }
 .container>:nth-child(4) ul{
   text-align:left;
-  font-size: 3vw;
 }
 .cdo-grid {
   display: grid;
@@ -242,7 +313,6 @@ footer p{
 .cdo-grid figure {
   text-align: center;
   max-width: 100%;
-  font-size: 3vw;
 }
 .cdo-grid img {
   max-width: 100%;
@@ -250,6 +320,7 @@ footer p{
   border-radius: 2vw; 
   padding: 1vw 0;
 }
+.cdo-grid a:hover,
 .cdo-grid a:focus {
   border: none;
   outline: 0.5vw dashed #00274C;
@@ -300,4 +371,205 @@ footer p{
 }
 .net-grid>:nth-child(2) a{
   color: white;
+}
+
+
+/* 404 section */
+.error-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.error-content img{
+  width: 30%;
+}
+.error-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #00274C;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.error-content p {
+  font-size: 18px;
+  color: #3d3d3d;
+  margin-bottom: 30px;
+}
+
+.back-home {
+  display: inline-block;
+  background-color: #00274C;
+  color: #f2c200;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 24px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-home:hover {
+  background-color: #004C7A;
+}
+
+@media screen and (min-width: 775px) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  li a{
+    font-size: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  body li{
+    font-size: 20px;
+  }
+  figure{
+    font-size: 20px;
+  }
+  .skip{
+     font-size: 20px;
+  }
+/* --- Navigation layout --- */
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00284c;
+    padding: 1px 10px;
+    height: 90px;
+  }
+
+  .navigation > img {
+    width: 60px;
+    padding: 1px 10px;
+  }
+
+
+  nav li{
+    display:inline;
+    padding:10px 40px;
+  }
+
+  .active{
+    border: 10px solid #f2c200;
+    border-style: none none solid none;
+  }
+
+  /* --- Container and grid layouts --- */
+
+  .container p{
+    margin-bottom: 10px;
+  }
+
+  .container > :first-child {
+    text-align: center;
+    padding: 10px 120px;
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    height: 10px;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: none;
+  }
+
+  .container>:first-child img {
+    width: 30%;
+  }
+
+
+  .resourcelist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: #b8d1c9;
+  }
+  .resourceitem{
+    grid-column: 1/2;
+  }
+  .resourcecard{
+    grid-column: 2/4;
+  }
+  .resourceitem,
+  .resourcecard {
+    border-top: 5px dashed #00274C; 
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .container > :nth-child(3) img {
+    width: 30%;
+    padding: 10px;
+    justify-self: center;
+  }
+
+  /* --- Card layout improvements --- */
+  .card-list {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2vw;
+  }
+
+  .card, .sub-card {
+    padding: 2vw;
+    border-radius: 1vw;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover, .sub-card:hover {
+    transform: translateY(-0.5vw) scale(1.02);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.15);
+  }
+
+  /* --- Networking grid (net-grid) --- */
+  .net-grid {
+    grid-template-columns: 60% 35%;
+    gap: 5vw;
+    align-items: start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .net-grid > :nth-child(2) {
+    border-radius: 1vw;
+  }
+
+  /* --- Footer layout --- */
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw 5vw;
+    text-align: left;
+  }
+
+  footer p {
+    font-size: 1vw;
+  }
+
 }
