@@ -54,7 +54,7 @@ body li{
 
 nav a:hover,
 nav a:focus{
-     border: 0.5vw dotted yellow;
+     border: 0.5vw dotted #f2c200;
 }
 .skip{
      font-size: 3vw;
@@ -126,21 +126,38 @@ nav a{
 
 /* footer */
 footer{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   width: 100%;
-  background-color: black;
+  background-color: #00284c;
   color: white;
   padding-top: 1vw;
-  text-align: center;
+  justify-items: center;
 }
 footer a{
      color: white;
 }
 footer p{
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
+.umsilogo{
+  width: 10vw;
+}
 
-
+footer h3{
+  font-size: 2vw;
+}
+.social-icon{
+  width: 3vw;
+}
+.footer-section a:hover,
+.footer-section a:focus {
+  border: none;
+  outline: 0.5vw dashed #f2c200;
+  outline-offset: -0.5vw;
+  border-radius: 1vw; 
+}
 
 /* container begin*/
 .container{
@@ -224,7 +241,8 @@ footer p{
   box-shadow: 0 1vw 2vw rgba(0,0,0,0.05);
 }
 
-.card:hover, .sub-card:hover{
+.card:hover, .sub-card:hover,
+.card:focus, .sub-card:focus{
   border-color: #003366;
   box-shadow: 0 2vw 3vw rgba(0,0,0,0.1);
   transform: translateY(-1vw);
@@ -280,7 +298,6 @@ footer p{
 .start_here a:focus {
   border: none;
   outline: 0.5vw dashed #00274C;
-  outline-offset: 1vw;
   border-radius: 1vw; 
 }
 
@@ -324,7 +341,7 @@ footer p{
 .cdo-grid a:focus {
   border: none;
   outline: 0.5vw dashed #00274C;
-  outline-offset: 1vw;
+  outline-offset: -0.5vw;
   border-radius: 1vw; 
 }
 
@@ -414,7 +431,8 @@ footer p{
   transition: background-color 0.3s;
 }
 
-.back-home:hover {
+.back-home:hover,
+.back-home:focus {
   background-color: #004C7A;
 }
 
@@ -528,6 +546,8 @@ footer p{
     padding: 10px;
     justify-self: center;
   }
+  /* Content taken & modified from UMGPT with the prompt, "Write me a css which improves card layout to meet the need of desktop view.": and then pasted in the css code above"
+  UMGPT. (2025). UMGPT ( GPT-4.1 Nov 9th version) [Large language model]. */
 
   /* --- Card layout improvements --- */
   .card-list {
@@ -541,7 +561,8 @@ footer p{
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .card:hover, .sub-card:hover {
+  .card:hover, .sub-card:hover,
+  .card:focus, .sub-card:focus {
     transform: translateY(-0.5vw) scale(1.02);
     box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.15);
   }
@@ -560,16 +581,13 @@ footer p{
   }
 
   /* --- Footer layout --- */
-  footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2vw 5vw;
-    text-align: left;
-  }
+
 
   footer p {
-    font-size: 1vw;
+    font-size: 15px;
+  }
+  footer h3{
+    font-size: 15px;
   }
 
 }

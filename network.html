@@ -178,13 +178,36 @@
     UMGPT. (2025). UMGPT ( GPT-4.1 Sep 5th version) [Large language model]. -->
   </main>
 
-  <footer>
-      <p>© Copyrights <span id="year"></span> by Xiaomi. All rights reserved.</p>
-  </footer>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-    console.log("copyright year shows up.");
-  </script>
+    <footer>
 
+      <img src="images/UMSI_signature_vertical_U_white.png" alt="UMSI logo" class="umsilogo">
+
+      <div class="footeraddress">
+        <h3>Address:</h3>
+        <p>
+            School of Information<br>
+            University of Michigan<br>
+            2200 Hayward Street<br>
+            Ann Arbor, MI 48109<br>
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact us:</h3>
+        <a href="mailto:umsi.careers@umich.edu" target="_blank" aria-label="Gmail"><img src="images/gmail.png" alt="Gmail" class="social-icon"></a>
+
+        <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" target="_blank" aria-label="LinkedIn">
+          <img src="images/LI-In-Bug.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+
+      <p class="footer-bottom">
+        © Copyrights <span id="year"></span> by Xiaomi Zhou. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
