@@ -145,8 +145,11 @@ footer p{
   width: 10vw;
 }
 
-footer h3{
+footer h1{
   font-size: 2vw;
+  line-height: 2;
+  text-align:left;
+  padding: 0;
 }
 .social-icon{
   width: 3vw;
@@ -586,7 +589,7 @@ footer h3{
   footer p {
     font-size: 15px;
   }
-  footer h3{
+  footer h1{
     font-size: 15px;
   }
 
